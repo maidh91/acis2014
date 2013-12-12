@@ -11,15 +11,13 @@ class main_menuSticker extends Nine_Sticker
                     'name' => 'HOME',
                     'id' => 'home'
                     ),
-//           
-//                    ),
             1 => array(
                     'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/3",
                     'name' => 'SUBMISSON',
                     'id' => 'SUBMISSON'
                     ),
             2 => array(
-                    'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/10",
+                    'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/4",
                     'name' => 'SPONSOR & HOST',
                     'id' => 'Sponsor'
                     ),
@@ -30,8 +28,6 @@ class main_menuSticker extends Nine_Sticker
                     'name' => 'COMMITEES',
                     'id' => 'Committees'
                     ),
-					
-            
         );
 // 		echo "<pre>";print_r($menus);die;
         $this->view->menus = $menus;
