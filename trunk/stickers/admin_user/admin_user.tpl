@@ -1,0 +1,1 @@
+{{l}}Hello{{/l}} <a href="{{$APP_BASE_URL}}user/admin/edit-user/id/{{$user.user_id}}" title="{{l}}Edit your profile{{/l}}">{{$user.full_name}}</a>, 
