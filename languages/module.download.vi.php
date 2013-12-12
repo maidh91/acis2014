@@ -1,0 +1,22 @@
+<?php
+return array (
+  'New Download' => '',
+  'New Folder' => '',
+  'Can not insert into database now' => '',
+  'Folder is created successfully.' => '',
+  'manage Folder ' => '',
+  'Edit Folder' => '',
+  'Folder is updated successfully.' => '',
+  'Folder is enable successfully' => '',
+  'Folder is disable successfully' => '',
+  'manage Download ' => '',
+  'Download is created successfully.' => '',
+  'Download is disable successfully' => '',
+  'Download is enable successfully' => '',
+  'Edit Download' => '',
+  'Download is updated successfully.' => '',
+  'Folder is deleted successfully' => '',
+  'Download is deleted successfully' => '',
+  'More' => 'Xem thêm',
+  'Back' => 'Trở về',
+);

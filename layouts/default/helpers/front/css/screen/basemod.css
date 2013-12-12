@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@media all
+{
+ /*------------------------------------------------------------------------------------------------------*/
+  body { margin:0; padding:0; background:url(../../images/bg1.jpg) repeat-x top;  }
+
+  #page_margins { width:100%; background: url(../../images/bg2.jpg) no-repeat top center;}
+  #page{ width:961px; margin:0 auto 0 auto; }
+
+  #header { height:135px;}
+  #topnav {  }
+
+  #main { }
+  .main1 {width:920px; margin:0 auto 0 auto;}
+
+  #footer { width:971px; background:url(../../images/bg_footer.jpg) no-repeat; height:178px; margin:10px auto 0 auto; }
+  .footer_content{width:920px;color:#fff;margin:0 auto 0 auto;}
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+  #col1 {  }
+  #col1_content {  }
+
+  #col2 {  }
+  #col2_content {  }
+
+  #col3 {  }
+  #col3_content {  }
+
+
+
+}
