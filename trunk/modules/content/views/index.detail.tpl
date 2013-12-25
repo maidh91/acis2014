@@ -1,3 +1,0 @@
-
-          {{$news.full_text}}
-          
