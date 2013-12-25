@@ -15,10 +15,10 @@ class main_menuSticker extends Nine_Sticker
 //                    ),
             1 => array(
                     'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/3",
-                    'name' => 'Call for Paper',
+                    'name' => 'Call for Papers',
                     'id' => 'Paper'
                     ),
-            2 => array(
+/*            2 => array(
                     'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/4",
                     'name' => 'Invited Talks',
                     'id' => 'Talks'
@@ -41,12 +41,13 @@ class main_menuSticker extends Nine_Sticker
 					'name' => 'Paper Submission',
 					'id' => 'Submission'
 			),
+*/			
 			6 => array(
 					'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/14",
 					'name' => 'Committees',
 					'id' => 'Committees'
 			),
-			
+/*			
 			7 => array(
 					'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/15",
 					'name' => 'Venue',
@@ -57,10 +58,10 @@ class main_menuSticker extends Nine_Sticker
 					'name' => 'Acommodation',
 					'id' => 'Acom'
 			),
-				
+*/				
 			9 => array(
 					'url' => Nine_Registry::getBaseUrl()."content/index/detail/id/17",
-					'name' => 'Sightseeing',
+					'name' => 'Sightseeings',
 					'id' => 'Photo'
 			),
             
