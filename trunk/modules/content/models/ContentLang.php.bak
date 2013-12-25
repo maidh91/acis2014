@@ -1,0 +1,106 @@
+<?php
+/**
+ * LICENSE
+ * 
+ * [license information]
+ * 
+ * @category   Nine
+ * @copyright  Copyright (c) 2009 visualidea.org
+ * @license    http://license.visualidea.org
+ * @version    v 1.0 2009-04-15
+ */
+require_once 'Nine/Model.php';
+class Models_ContentLang extends Nine_Model
+{ 
+    /**
+     * The primary key column or columns.
+     * A compound key should be declared as an array.
+     * You may declare a single-column primary key
+     * as a string.
+     *
+     * @var mixed
+     */
+    protected $_primary = 'content_lang_id';
+    
+    /**
+     * Constructor.
+     *
+     * Supported params for $config are:
+     * - db              = user-supplied instance of database connector,
+     *                     or key name of registry instance.
+     * - name            = table name.
+     * - primary         = string or array of primary key(s).
+     * - rowClass        = row class name.
+     * - rowsetClass     = rowset class name.
+     * - referenceMap    = array structure to declare relationship
+     *                     to parent tables.
+     * - dependentTables = array of child tables.
+     * - metadataCache   = cache for information from adapter describeTable().
+     *
+     * @param  mixed $config Array of user-specified config options, or just the Db Adapter.
+     * @return void
+     */
+    public function __construct($config = array())
+    {
+        $this->_name = $this->_prefix . 'content_lang';
+        return parent::__construct($config); 
+    }
+
+    public function getAllContentByCategoryId($condition = array(), $categoryId, $langId = 1, $offset = 0 , $limit = 10)
+    {
+        $langId = intval($langId);
+        $offset = intval($offset);
+        $limit  = intval($limit);
+//        echo "<pre>"; print_r($categoryId);die;
+        $query = "
+                SELECT * 
+                FROM {$this->_prefix}content_lang as a 
+                INNER JOIN {$this->_prefix}content as b on a.content_id= b.content_id
+                WHERE a.lang_id = {$langId} AND a.enabled = 1 AND b.content_category_id = {$categoryId}
+        ";
+        if (null != @$condition['content_id']) {
+            $query .= $this->getAdapter()->quoteInto(" AND b.content_id != ?", $condition['content_id']);
+        }
+        $query .= " ORDER BY b.created_date LIMIT {$offset},{$limit} ";
+//        echo $query;die;
+        
+        return $this->_db->fetchAll($query);
+    }
+    public function getUrl($id)
+    {
+        $result = $this->getByColumns(array('content_id=?' => $id))->toArray();
+        $result = reset($result);
+        
+        if (null == @$result['url']) {
+            return Nine_Registry::getAppBaseUrl();
+        }
+        
+        return Nine_Registry::getAppBaseUrl() . 'page/' . $result['url'] . '.html';
+    }
+    
+    public function getUrlWithoutAppBaseUrl($id)
+    {
+        $result = $this->getByColumns(array('content_id=?' => $id))->toArray();
+        $result = reset($result);
+        
+        if (null == @$result['url']) {
+            return Nine_Registry::getAppBaseUrl();
+        }
+        
+        return 'page/' . $result['url'] . '.html';
+    }
+
+    
+    public function getContent($id)
+    {
+        $result = $this->getByColumns(array('content_id=?' => $id))->toArray();
+        $result = reset($result);
+            $array = explode(" ", $result['title']);
+         
+        foreach ($array as $item){
+           $result['titleeach'][] = substr($item,0,1); 
+           $result['titleeach'][] = substr($item,1,strlen($item)-1); 
+        }
+        return $result;
+    }
+}
