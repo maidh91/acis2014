@@ -60,7 +60,7 @@ img {
     width: 100%;	
 }
 
-nav.primary ul{float:right; /*padding-top:19px;*/}
+nav.primary ul{float:left; /*padding-top:19px;*/}
 
 nav.primary ul,
 nav.primary ul li {

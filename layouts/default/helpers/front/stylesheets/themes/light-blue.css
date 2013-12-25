@@ -108,7 +108,8 @@ nav.primary ul li:hover > a,  nav.primary ul li a.active{
 
 h1.logo a {
 
-   /*background: url(../../images/logo_plain.png) no-repeat;*/
+   background: url(../../images/logo_plain.png) no-repeat;
+margin-left: -86px;
 
 
 }
