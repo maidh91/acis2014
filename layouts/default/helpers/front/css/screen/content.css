@@ -23,7 +23,7 @@
   /* ### Lists | Listen  #### */
 
   ul, ol, dl { line-height: 1.5em; margin: 0 0 1em 1em }
-  li { margin-left: 1.5em; line-height: 1.5em }
+  li { margin-left: 1.5em; line-height: 1em }
 
   dt { font-weight: bold }
   dd { margin: 0 0 1em 2em }
