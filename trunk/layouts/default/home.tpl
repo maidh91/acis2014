@@ -73,11 +73,7 @@
 <link rel="stylesheet" href="{{$LAYOUT_HELPER_URL}}front/css/boostrap.min.css">
         
 <style>
- 
- 
-h3 {
-	
-}
+
  img.cover {
  	height: 500px;
  	width: 1100px;
@@ -91,7 +87,7 @@ p {
  
 h3.sectionhead {
    
-    padding-left: 5px;
+    padding-left: 15px;
 }
 .left{
 	float:left;
@@ -108,21 +104,13 @@ h3.sectionhead {
 }
 
 
+
 .confullblue li {
     
-/*     color: #FFFFFF; */
-}
-.confullblueTitle {
-    border-bottom: 1px solid #529FCF;
     color: #FFFFFF;
-    display: block;
-    font-size: 17px;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 3px;
-    padding-left: 60px;
-    text-transform: uppercase;
 }
+
+
 ul.confullblue li a, a:visited {
     color: #FFFFFF;
     outline: 0 none;
@@ -155,27 +143,22 @@ li.item a:hover, a:focus{
             </div>
         </div><!--end band-->
 
-        <div class="band mb25" >
+        
+        
+        {{sticker name = photos }}
+       
+          <div class="band mb25" >
          
             <div class="container">
             <div class="left">
-               
-        		 {{$content}}
-        		
+                 {{$content}}
         	</div>
         	<div class="right" style="margin-top:40px;">
-        	 {{sticker name = sidebar }}
-
-                
+        	{{sticker name = sidebar }}
         	</div>
         </div>
      
- 		</div>       
- 		
-        
-       
-       
-        
+ 		</div>  
         
 
         <div class="band bottom">
