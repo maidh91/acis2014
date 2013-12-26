@@ -1,0 +1,203 @@
+﻿@import "Uploadify.css";
+.wrapper{width: 1004px;margin: 0px auto;position: relative;}
+.fright{float: right;}
+.fleft{float: left;}
+.clear{clear: both;}
+.width{width: 100%;}
+.center{margin: 0px auto;}
+#body
+{
+    font-family: arial, tahoma;
+    background: white;
+    font-size: 13px;
+}
+#Header {
+    height: 100px;
+}
+#Members {
+    background: url(images/member.jpg) no-repeat;
+    height: 80px;
+    width: 500px;
+}
+#logo {
+    background: url("images/logo.jpg") no-repeat scroll 0 0 transparent;
+    height: 79px;
+    width: 497px;
+}
+#Mainmenu {
+    border-bottom: 5px solid #1384CA;
+    height: 35px;
+}
+#Mainmenu .MainmenuUl {
+    display: block;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    margin: 0 0 0 7px;
+}
+#Mainmenu .MainmenuUl li {
+    display: block;
+    float: left;
+}
+#Mainmenu .MainmenuUl li a {
+    display: block;
+    font-size: 15px;
+    line-height: 35px;
+    padding: 0 18px;
+    text-transform: uppercase;
+}
+#Mainmenu .MmSelected a,#Mainmenu .MainmenuUl li a:hover {
+    background: #1384CA;
+    color: white;
+    text-decoration: none;
+}
+#Mainmenu .MmSelected span, #Mainmenu .mmHome:hover span {
+    background-position: left top !important;
+}
+#Mainmenu .mmHome span{
+    background: url("images/home.png") no-repeat scroll left bottom transparent;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 7px 15px 0 10px;
+    width: 20px;
+}
+#Mainmenu .mmHome {
+    width: 105px;
+}
+#Mainmenu .mmHome a {
+    padding-right: 10px !important;
+}
+#Breadcrumb {
+    height: 25px;
+    padding-top: 5px;
+}
+#Breadcrumb a {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+#Breadcrumb *{color: #A0A0A0;}
+#Search {
+    width: 227px;
+}
+.acsIKeyword {
+    border: 1px solid #A0A0A0;
+    color: #A0A0A0;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-style: italic;
+    height: 21px;
+    width: 180px;
+}
+.acsbtnSearch {
+    background: none repeat scroll 0 0 #F97340;
+    border: 1px solid #FC824C;
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#BSBox {
+    border-bottom: 1px dashed #C0C0C0;
+    height: 30px;
+    margin-top: 7px;
+}
+#Left {
+    margin-top: 10px;
+    width: 750px;
+}
+.right {
+    margin-top: 5px;
+    width: 230px;
+}
+#Footer {
+    margin-top: 20px;
+    height: 123px;
+    background: url(images/footer.jpg) repeat-x;
+}
+#flogo {
+    background: url("images/logo2.jpg") no-repeat scroll 0 0 transparent;
+    height: 139px;
+    left: 0;
+    position: absolute;
+    top: -16px;
+    width: 200px;
+}
+#flogo2 {
+    background: url("images/slogan.png") no-repeat scroll 0 0 transparent;
+    height: 30px;
+    left: 63px;
+    position: absolute;
+    top: 45px;
+    width: 530px;
+}
+#fmenu li {
+    display: block;
+    float: left;
+}
+#fmenu li a{
+    color: white;
+    font-size: 12px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+#fmenu .MainmenuUl {
+    margin: 10px 0 0;
+    padding: 0;
+}
+#fmenu .MmSelected a {
+    text-decoration: underline;
+}
+#fUser {
+   position: absolute;
+    right: 10px;
+    top: 48px; 
+}
+#fUser a {
+    color: white;
+    font-size: 12px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+#Copyright {
+    color: white;
+    font-size: 13px;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    top: 85px;
+}
+#Copyright a {
+    color: white;
+}
+.sevMenu li {
+    list-style: disc outside url("images/lst.png");
+    padding: 5px 0;
+}
+.sevMenu li a {
+    color: white;
+    font-size: 16px;
+}
+.sevMenu {
+    margin: 2px 0;
+    padding-left: 30px;
+}
+#sldnpcontrols,#sldecontrols{ display: none;}
+.sevMenu li a.selected,.sevMenu li a:hover {
+    text-decoration: underline;
+}
+.tblAdmin {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.tblAdmin > tbody > tr > td,.tblAdmin > tbody > tr > th{
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+.tblAdmin > tbody > tr > th {
+    text-align: center;
+    vertical-align: middle;
+}
