@@ -71,7 +71,7 @@ Examples:
 
 ATTENTION: The trailing slash is required.
 */
-$baseUrl = '/~save/ACIS2014/media/userfiles/';
+$baseUrl = 'http://www.cse.hcmut.edu.vn/~save/ACIS2014/media/userfiles/';
 
 /*
 $baseDir : the path to the local directory (in the server) which points to the
