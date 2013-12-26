@@ -68,8 +68,52 @@
         <script src="{{$LAYOUT_HELPER_URL}}front/javascripts/jquery.tweet.js"></script>
 
         <script src="{{$LAYOUT_HELPER_URL}}front/javascripts/jquery.flickrush.pack.js"></script>
-        <!--
-        ================================================== -->
+       
+       <link rel="stylesheet" href="{{$LAYOUT_HELPER_URL}}front/css/boostrap.css">
+<link rel="stylesheet" href="{{$LAYOUT_HELPER_URL}}front/css/boostrap.min.css">
+        
+<style>
+h3.sectionhead {
+   
+    padding-left: 15px;
+}
+.left{
+	float:left;
+	height: auto;
+	position:relative;
+	width: 75%;
+
+	
+}
+.right{
+	float:left;
+	width: 25%;
+	padding-left: 10px;
+}
+
+
+.confullblue {
+    background: none repeat scroll 0 0 #E6E6E6;
+    margin: 5px 0;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+.confullblue li {
+    
+    color: #FFFFFF;
+}
+.confullblueTitle {
+    border-bottom: 1px solid #529FCF;
+    color: #FFFFFF;
+    display: block;
+    font-size: 17px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+</style>
     </head>
 
     <body>
@@ -92,6 +136,9 @@
         
         
         {{$content}}
+       
+        
+        
 
         <div class="band bottom">
 

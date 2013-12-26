@@ -37,7 +37,7 @@ body,
 }
 
 .band.footer {
-    background: /*url(../../images/stitch_large.png) left top repeat-x,*/
+    background: url(../../images/stitch_large.png) left top repeat-x,
         url(../../images/bg_dark.png) repeat left 2px,
         #3fbeef;		
     color: #464646; 
