@@ -11,6 +11,7 @@ class default_IndexController extends Nine_Controller_Action
 {
 	public function indexAction()
 	{
+		$this->setLayout('home');
 		$objContent = new Models_Content();
 		$objContentCategory = new Models_ContentCategory();
 		
